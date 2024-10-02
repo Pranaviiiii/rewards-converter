@@ -7,14 +7,14 @@ public class RewardValueTests {
     void create_with_cash_value() {
         double cashValue = 100;
         RewardValue rewardValue = new RewardValue(cashValue);
-        assertEquals(cashValue, rewardValue.getCashValue(), "Cash value should be accurate.");
+        assertEquals(cashValue, rewardValue.getCashValue(), "Cash value should match the input value.");
     }
 
     @Test
     void create_with_miles_value() {
         int milesValue = 10000;
         RewardValue rewardValue = new RewardValue(milesValue);
-        assertEquals(milesValue, rewardValue.getMilesValue(), "Miles value should be accurate.");
+        assertEquals(milesValue, rewardValue.getMilesValue(), "Miles value should match the input value.");
     }
 
     @Test
@@ -33,5 +33,6 @@ public class RewardValueTests {
         assertEquals(expectedCash, rewardValue.getCashValue(), "Conversion from miles to cash should be accurate.");
     }
 }
+
 
 
